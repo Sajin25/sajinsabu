@@ -12,6 +12,30 @@ body, html {
     background-size: cover;
 }
 
+.page-header, .page-footer {
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-family: 'Comic Neue', cursive;
+}
+
+.page-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure header is above other content */
+}
+
+.page-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure footer is above other content */
+}
+
 .container-wrapper {
     display: flex;
     justify-content: center;
@@ -21,6 +45,8 @@ body, html {
     padding: 20px; /* Adjust padding as needed for space around the container */
     box-sizing: border-box;
     background: rgba(0, 0, 0, 0.3); /* Semi-transparent background */
+    margin-top: 60px; /* Account for header height */
+    margin-bottom: 40px; /* Account for footer height */
 }
 
 .container {
@@ -63,7 +89,7 @@ h1 {
 }
 
 .certificates img {
-    width: 250px; /* Adjusted size */
+    width: 300px; /* Adjusted size */
     height: auto;
     margin: 10px;
     border-radius: 10px;
