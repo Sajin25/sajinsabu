@@ -20,7 +20,7 @@ body, html {
     border: 30px solid transparent;
     padding: 30px;
     box-sizing: border-box;
-    background: url('leaves.png') border-box; /* Add your leaves image path */
+    background: url('leaf.png') border-box; /* Add your leaves image path */
     background-size: 100% 100%;
 }
 
