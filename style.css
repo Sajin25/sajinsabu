@@ -11,8 +11,14 @@ body, html {
     background-size: cover;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1 {
     color: yellow;
+    font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+    font-weight: 600; /* Semi-bold */
+}
+
+h2, h3, h4, h5, h6 {
+    color: white;
     font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
     font-weight: 600; /* Semi-bold */
 }
