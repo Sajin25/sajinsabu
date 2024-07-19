@@ -17,11 +17,7 @@ body, html {
     width: 80%;
     height: 80%;
     position: relative;
-    border: 30px solid transparent;
-    padding: 30px;
-    box-sizing: border-box;
-    background: url('leaf.png') border-box; /* Add your leaves image path */
-    background-size: 100% 100%;
+    border: 5px solid transparent; 
 }
 
 .left-section {
