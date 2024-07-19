@@ -62,8 +62,14 @@ body, html {
     border: 5px solid #fff;
 }
 
-.description {
+.profile h3 {
+    font-family: 'Patrick Hand', cursive;
+    color: #ffcc00; /* Yellow color for h3 */
     margin-top: 15px;
+}
+
+.description {
+    margin-top: 10px;
     font-family: Arial, sans-serif;
     color: #fff;
     font-size: 14px;
