@@ -63,7 +63,7 @@ h1 {
 }
 
 .certificates img {
-    width: 150x; /* Increased size */
+    width: 100x; /* Increased size */
     height: auto;
     margin: 10px;
     border-radius: 10px;
