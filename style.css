@@ -38,9 +38,16 @@ body, html {
     padding: 20px;
 }
 
-.header {
+.header h1 {
     margin: 0;
-    text-align: left;
+    font-family: 'Pacifico', cursive; /* Cursive font for h1 */
+    color: #ffcc00; /* Yellow color for h1 */
+}
+
+.header h2 {
+    margin: 0;
+    font-family: 'Patrick Hand', cursive; /* Handwriting font for h2 */
+    color: #ffffff; /* White color for h2 */
 }
 
 .profile {
