@@ -33,7 +33,7 @@ body, html {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
     width: 40%;
     padding: 20px;
 }
@@ -58,8 +58,9 @@ body, html {
 .nav-buttons {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin-top: 30px;
+    align-items: flex-end;
+    gap: 15px; /* Space between buttons */
+    width: 100%;
 }
 
 .nav-buttons button {
@@ -79,7 +80,6 @@ body, html {
     font-size: 16px;
     font-weight: bold;
     font-family: 'Comic Sans MS', sans-serif;
-    margin-bottom: 10px; /* Space between buttons */
 }
 
 .nav-buttons button:hover {
