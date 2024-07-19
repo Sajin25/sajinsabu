@@ -44,9 +44,21 @@ h1 {
 
 .certificates {
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
     margin: 20px 0;
+}
+
+.certificate-item {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.certificate-description {
+    color: white;
+    font-family: 'Times New Roman', serif;
+    margin-bottom: 10px;
+    font-size: 14px;
 }
 
 .certificates img {
