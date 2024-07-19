@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300&display=swap');
+
 body, html {
     margin: 0;
     padding: 0;
@@ -7,6 +9,17 @@ body, html {
     font-family: Arial, sans-serif;
     background: url('5501609ee45d514d1f2c4a63502045e2.gif') no-repeat center center fixed;
     background-size: cover;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: yellow;
+    font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+    font-weight: 600; /* Semi-bold */
+}
+
+p, span, a, li, div, input, label, textarea {
+    color: white;
+    font-family: 'Comic Neue', cursive;
 }
 
 .container {
