@@ -5,8 +5,8 @@ body, html {
     margin: 0;
     padding: 0;
     width: 100%;
-    height: 100%;
-    overflow: hidden;
+    height: auto; /* Allow height to adjust based on content */
+    overflow: auto; /* Enable scrolling */
     font-family: Arial, sans-serif;
     background: url('5501609ee45d514d1f2c4a63502045e2.gif') no-repeat center center fixed;
     background-size: cover;
@@ -15,9 +15,9 @@ body, html {
 .container-wrapper {
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 100vh;
-    width: 100vw;
+    align-items: flex-start; /* Align items to the top */
+    min-height: 100vh; /* Ensure container covers viewport height */
+    width: 100%;
     padding: 20px; /* Adjust padding as needed for space around the container */
     box-sizing: border-box;
     background: rgba(0, 0, 0, 0.3); /* Semi-transparent background */
@@ -27,7 +27,7 @@ body, html {
     text-align: center;
     position: relative;
     width: 80%; /* Adjust width as needed */
-    height: 80%; /* Adjust height as needed */
+    min-height: 80vh; /* Ensure container has a minimum height */
     padding: 20px;
     box-sizing: border-box;
     border: 5px solid transparent; /* Transparent border for leaf image */
@@ -63,7 +63,7 @@ h1 {
 }
 
 .certificates img {
-    width: 150px; /* Adjust size if needed */
+    width: 300px; /* Increased size */
     height: auto;
     margin: 10px;
     border-radius: 10px;
