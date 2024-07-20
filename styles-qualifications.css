@@ -26,15 +26,17 @@ body, html {
 }
 
 .nav-buttons-top {
+    position: fixed;
+    top: 20px;
+    right: 20px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     gap: 10px;
-    margin-bottom: 20px;
 }
 
 .nav-buttons-top button {
-    padding: 8px 16px;
-    font-size: 14px;
+    padding: 8px 12px; /* Smaller padding for smaller buttons */
+    font-size: 14px; /* Smaller font size */
     cursor: pointer;
     border: none;
     background: radial-gradient(circle, #ff7f50, #ff4500);
