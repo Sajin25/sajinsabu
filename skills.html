@@ -7,33 +7,29 @@
     <link rel="stylesheet" href="styles-skills.css">
 </head>
 <body>
-    <header class="page-header">
-        <h2>Here is some of My achievements!!!</h2>
-    </header>
-
-    <div class="container-wrapper">
-        <div class="container">
-            <h1>Skills</h1>
-            <div class="certificates">
-                <div class="certificate-item">
-                    <p class="certificate-description">Description of Certificate 1</p>
-                    <img src="certificate3.jpg" alt="Certificate 1">
-                </div>
-                <div class="certificate-item">
-                    <p class="certificate-description">Description of Certificate 2</p>
-                    <img src="certificate3.jpg" alt="Certificate 2">
-                </div>
-                <div class="certificate-item">
-                    <p class="certificate-description">Description of Certificate 3</p>
-                    <img src="certificate3.jpg" alt="Certificate 3">
-                </div>
-            </div>
-            <button class="back-button" onclick="window.history.back()">Back</button>
+    <div class="container">
+        <div class="top-buttons">
+            <button onclick="navigate('qualifications.html')">Qualifications</button>
+            <button onclick="navigate('current_position.html')">Current Position</button>
+            <button onclick="navigate('contact.html')">Contact</button>
         </div>
+        <h1>Skills</h1>
+        <div class="certificates">
+            <div class="certificate-item">
+                <p>Certificate in Web Development</p>
+                <img src="certificate3.jpg" alt="Certificate 1">
+            </div>
+            <div class="certificate-item">
+                <p>Certificate in Data Science</p>
+                <img src="certificate3.jpg" alt="Certificate 2">
+            </div>
+            <div class="certificate-item">
+                <p>Certificate in Machine Learning</p>
+                <img src="certificate3.jpg" alt="Certificate 3">
+            </div>
+        </div>
+        <button class="back-button" onclick="window.history.back()">Back</button>
     </div>
-
-    <footer class="page-footer">
-        <p>&copy; 2024 Sajin Sabu. All rights reserved.</p>
-    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
