@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap'); /* Cursive font for h3 */
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap'); /* Handwriting font */
+@import url('https://fonts.googleapis.com/css2?family=Times+New+Roman&display=swap'); /* Times New Roman */
+@import url('https://fonts.googleapis.com/css2?family=Comic+Sans+MS&display=swap'); /* Cartoon font */
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap'); /* Fancy font for clock */
+
 body, html {
     margin: 0;
     padding: 0;
@@ -20,7 +26,6 @@ body, html {
     border: 5px solid transparent;
     background: url('leaves.png') border-box;
     background-size: 100% 100%;
-    text-align: center;
 }
 
 .header {
@@ -33,6 +38,10 @@ h1 {
     font-family: 'Pacifico', cursive;
 }
 
+h1.handwriting {
+    font-family: 'Patrick Hand', cursive;
+}
+
 h2 {
     color: white;
     font-family: 'Patrick Hand', cursive;
@@ -40,13 +49,22 @@ h2 {
 
 .profile {
     margin-top: 20px;
+    text-align: left;
+    padding-left: 20px;
 }
 
 .profile-photo {
-    border-radius: 50%;
+    border-radius: 10px;
     width: 200px;
     height: 200px;
-    border: 5px solid #fff;
+    border: 10px solid;
+    border-image: linear-gradient(to right, white, #ccc);
+    border-image-slice: 1;
+}
+
+h3 {
+    font-family: 'Pacifico', cursive;
+    color: yellow;
 }
 
 .description {
@@ -59,6 +77,9 @@ h2 {
     position: absolute;
     top: 20px;
     right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .nav-buttons button {
@@ -67,25 +88,29 @@ h2 {
     font-size: 16px;
     cursor: pointer;
     border: none;
-    background-color: #007bff;
+    background: radial-gradient(circle, #ff7f50, #ff4500);
     color: white;
-    border-radius: 5px;
+    border-radius: 10px;
     transition: background-color 0.3s, transform 0.3s;
 }
 
 .nav-buttons button:hover {
-    background-color: #0056b3;
+    background: radial-gradient(circle, #ff6347, #ff0000);
     transform: scale(1.1);
 }
 
 .nav-buttons button:active {
-    background-color: #004085;
+    background: radial-gradient(circle, #ff4500, #ff6347);
 }
 
 .clock {
     margin-top: 20px;
-    font-family: 'Dot Matrix', 'Courier New', Courier, monospace;
-    font-size: 48px;
+    font-family: 'DotGothic16', sans-serif;
+    font-size: 64px;
     color: #00ff00;
     text-align: center;
+    font-weight: bold;
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
 }
