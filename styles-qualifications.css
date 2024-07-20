@@ -64,3 +64,43 @@ h1 {
     color: white;
     margin-top: 20px;
 }
+
+.qualification {
+    margin: 20px 0;
+}
+
+.qualification h2 {
+    color: yellow;
+    font-family: 'Pacifico', cursive;
+}
+
+.qualification p {
+    font-family: 'Times New Roman', serif;
+    color: white;
+}
+
+.nav-buttons-bottom {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.nav-buttons-bottom button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background: radial-gradient(circle, #ff7f50, #ff4500);
+    color: white;
+    border-radius: 10px;
+    font-family: 'Comic Sans MS', cursive;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.nav-buttons-bottom button:hover {
+    background: radial-gradient(circle, #ff6347, #ff0000);
+    transform: scale(1.1);
+}
+
+.nav-buttons-bottom button:active {
+    background: radial-gradient(circle, #ff4500, #ff6347);
+}
