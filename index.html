@@ -5,32 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sajin Sabu's Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <!-- Google Fonts -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pacifico&family=Patrick+Hand&display=swap">
 </head>
 <body>
     <div class="container">
-        <div class="left-section">
-            <div class="header">
-                <h1>Hi,</h1>
-                <h1>I'm Sajin Sabu</h1>
-                <h2>Studying at College of Engineering Pathanapuram</h2>
-            </div>
-            <div class="profile">
-                <img src="WhatsApp Image 2023-09-24 at 14.45.42_3729cdd2.jpg" alt="Sajin Sabu's Photo" class="profile-photo">
-                <h3>About Me</h3>
-                <p class="description">I am a passionate student who loves exploring new technologies and participating in hackathons. My interests include software development, AI, and web design.</p>
-            </div>
+        <div class="header">
+            <h1>Hi,</h1>
+            <h1>I'm Sajin Sabu</h1>
+            <h2>Studying at College of Engineering Pathanapuram</h2>
         </div>
-        <div class="right-section">
-            <div class="nav-buttons">
-                <button onclick="navigate('skills.html')">Skills</button>
-                <button onclick="navigate('qualifications.html')">Qualifications</button>
-                <button onclick="navigate('current_position.html')">Current Position</button>
-                <button onclick="navigate('contact.html')">Contact</button>
-            </div>
+        <div class="profile">
+            <img src="WhatsApp Image 2023-09-24 at 14.45.42_3729cdd2.jpg" alt="Sajin Sabu's Photo" class="profile-photo">
+            <h3>About Me</h3>
+            <p class="description">A brief description about Sajin Sabu...</p>
+        </div>
+        <div id="clock" class="clock"></div>
+        <div class="nav-buttons">
+            <button onclick="navigate('skills.html')">Skills</button>
+            <button onclick="navigate('qualifications.html')">Qualifications</button>
+            <button onclick="navigate('current_position.html')">Current Position</button>
+            <button onclick="navigate('contact.html')">Contact</button>
         </div>
     </div>
     <script src="script.js"></script>
+    <script src="clock.js"></script>
 </body>
 </html>
