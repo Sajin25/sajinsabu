@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap'); /* Handwriting font */
+@import url('https://fonts.googleapis.com/css2?family=Comic+Sans+MS&display=swap'); /* Cartoon font */
 
 body, html {
     margin: 0;
@@ -12,50 +13,15 @@ body, html {
     background-size: cover;
 }
 
-.page-header, .page-footer {
-    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-    color: white;
-    text-align: center;
-    padding: 10px;
-    font-family: 'Comic Neue', cursive;
-}
-
-.page-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000; /* Ensure header is above other content */
-}
-
-.page-footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000; /* Ensure footer is above other content */
-}
-
-.container-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start; /* Align items to the top */
-    min-height: 100vh; /* Ensure container covers viewport height */
-    width: 100%;
-    padding: 20px; /* Adjust padding as needed for space around the container */
-    box-sizing: border-box;
-    background: rgba(0, 0, 0, 0.3); /* Semi-transparent background */
-    margin-top: 60px; /* Account for header height */
-    margin-bottom: 40px; /* Account for footer height */
-}
-
 .container {
     text-align: center;
     position: relative;
     width: 80%; /* Adjust width as needed */
-    min-height: 80vh; /* Ensure container has a minimum height */
+    min-height: 100vh; /* Ensure container has a minimum height */
     padding: 20px;
     box-sizing: border-box;
+    margin: 20px auto; /* Center container with margins */
+    background: rgba(0, 0, 0, 0.3); /* Semi-transparent background */
     border: 5px solid transparent; /* Transparent border for leaf image */
     background: url('leaves.png') border-box; /* Replace with your border image */
     background-size: 100% 100%; /* Ensures the border image covers the entire border area */
@@ -69,32 +35,52 @@ h1 {
     padding: 0 20px; /* Add padding for spacing from edges */
 }
 
-.certificates {
+.top-buttons {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 20px 0;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.top-buttons button {
+    font-family: 'Comic Sans MS', cursive;
+    background-color: orange;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+    font-size: 14px;
+}
+
+.top-buttons button:hover {
+    background-color: darkorange;
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.certificates {
+    text-align: center;
 }
 
 .certificate-item {
     margin: 20px 0;
-    text-align: center;
 }
 
-.certificate-description {
+.certificate-item p {
     color: white;
     font-family: 'Patrick Hand', cursive; /* Handwriting font */
-    margin-bottom: 10px;
-    font-size: 14px;
+    font-size: 16px;
+    margin-bottom: 5px;
 }
 
 .certificates img {
-    width: 350px; /* Adjusted size */
+    width: 350px; /* Set width to 350px */
     height: auto;
     margin: 10px;
+    border: 5px solid white; /* White frame around the certificates */
     border-radius: 10px;
-    border: 4px solid white; /* White frame around the images */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 button.back-button {
