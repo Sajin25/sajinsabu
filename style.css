@@ -110,13 +110,15 @@ h3 {
 }
 
 .clock {
-    margin-top: 20px;
+    position: fixed; /* Ensure the clock stays at the bottom of the viewport */
+    bottom: 0; /* Position at the bottom */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust for center alignment */
     font-family: 'DotGothic16', sans-serif;
     font-size: 64px;
     color: #00ff00;
     text-align: center;
     font-weight: bold;
-    position: absolute;
-    bottom: 10px; /* Decrease this value to move the clock further down */
-    width: 100%;
+    padding: 10px; /* Add padding if needed */
+    background: rgba(0, 0, 0, 0.5); /* Optional background to make clock more readable */
 }
