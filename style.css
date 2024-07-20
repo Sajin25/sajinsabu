@@ -72,6 +72,11 @@ h3 {
     font-family: 'Times New Roman', serif;
     color: white;
     margin-top: 10px;
+    max-width: 50%; /* Restricts width to 50% of the page */
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 0 20px; /* Optional: adds horizontal padding */
 }
 
 .nav-buttons {
