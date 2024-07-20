@@ -1,8 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap'); /* Cursive font for h3 */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap'); /* Cursive font for h1 */
 @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap'); /* Handwriting font */
 @import url('https://fonts.googleapis.com/css2?family=Times+New+Roman&display=swap'); /* Times New Roman */
 @import url('https://fonts.googleapis.com/css2?family=Comic+Sans+MS&display=swap'); /* Cartoon font */
 @import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap'); /* Fancy font for clock */
+@import url('https://fonts.googleapis.com/css2?family=Freckle+Face&display=swap'); /* Cartoon font for buttons */
 
 body, html {
     margin: 0;
@@ -91,6 +92,7 @@ h3 {
     background: radial-gradient(circle, #ff7f50, #ff4500);
     color: white;
     border-radius: 10px;
+    font-family: 'Freckle Face', cursive;
     transition: background-color 0.3s, transform 0.3s;
 }
 
