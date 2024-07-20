@@ -84,7 +84,7 @@ h3 {
     transform: translateY(-50%);
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 15px; /* Adjust this value to increase or decrease spacing between buttons */
 }
 
 .nav-buttons button {
