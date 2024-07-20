@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Comic+Sans+MS&display=swap'); /* Cartoon font */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap'); /* Cursive font */
 
 body, html {
     margin: 0;
@@ -53,15 +54,15 @@ body, html {
 }
 
 h1 {
-    color: yellow;
-    font-family: 'Pacifico', cursive;
+    color: white; /* Changed color to white */
+    font-family: 'Pacifico', cursive; /* Changed font to cursive */
     text-align: center;
 }
 
 .qualifications {
     text-align: center;
-    font-family: 'Times New Roman', serif;
-    color: white;
+    font-family: 'Pacifico', cursive; /* Changed font to cursive */
+    color: white; /* Changed font color to white */
     margin-top: 20px;
 }
 
@@ -70,13 +71,13 @@ h1 {
 }
 
 .qualification h2 {
-    color: yellow;
-    font-family: 'Pacifico', cursive;
+    color: white; /* Changed color to white */
+    font-family: 'Pacifico', cursive; /* Changed font to cursive */
 }
 
 .qualification p {
-    font-family: 'Times New Roman', serif;
-    color: white;
+    font-family: 'Pacifico', cursive; /* Changed font to cursive */
+    color: white; /* Changed color to white */
 }
 
 .nav-buttons-bottom {
