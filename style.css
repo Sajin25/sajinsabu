@@ -7,52 +7,39 @@ body, html {
     font-family: Arial, sans-serif;
     background: url('new.gif') no-repeat center center fixed;
     background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .container {
-    display: flex;
-    width: 80%;
-    height: 80%;
     position: relative;
-    border: 5px solid transparent; 
-}
-
-.left-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    width: 60%;
+    width: 80%;
+    min-height: 100vh;
     padding: 20px;
+    box-sizing: border-box;
+    margin: 20px auto;
+    background: rgba(0, 0, 0, 0.3);
+    border: 5px solid transparent;
+    background: url('leaves.png') border-box;
+    background-size: 100% 100%;
+    text-align: center;
 }
 
-.right-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-end;
-    width: 40%;
-    padding: 20px;
+.header {
+    text-align: left;
+    padding-left: 20px;
 }
 
-.header h1 {
-    margin: 0;
-    font-family: 'Pacifico', cursive; /* Cursive font for h1 */
-    color: #ffcc00; /* Yellow color for h1 */
+h1 {
+    color: yellow;
+    font-family: 'Pacifico', cursive;
 }
 
-.header h2 {
-    margin: 0;
-    font-family: 'Patrick Hand', cursive; /* Handwriting font for h2 */
-    color: #ffffff; /* White color for h2 */
+h2 {
+    color: white;
+    font-family: 'Patrick Hand', cursive;
 }
 
 .profile {
     margin-top: 20px;
-    text-align: left;
 }
 
 .profile-photo {
@@ -62,56 +49,43 @@ body, html {
     border: 5px solid #fff;
 }
 
-.profile h3 {
-    font-family: 'Patrick Hand', cursive;
-    color: #ffcc00; /* Yellow color for h3 */
-    margin-top: 15px;
-}
-
 .description {
+    font-family: 'Times New Roman', serif;
+    color: white;
     margin-top: 10px;
-    font-family: 'Times New Roman', Times, serif; /* Times New Roman font for description */
-    color: #fff;
-    font-size: 14px;
-    line-height: 1.5;
-    max-width: 80%;
 }
 
 .nav-buttons {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    gap: 15px; /* Space between buttons */
-    width: 100%;
+    position: absolute;
+    top: 20px;
+    right: 20px;
 }
 
 .nav-buttons button {
-    display: inline-block;
-    width: 140px;
-    height: 50px;
-    position: relative;
-    border: none;
-    cursor: pointer;
-    background: radial-gradient(circle, #ffcc00, #ffb300); /* Radial gradient background */
-    color: #333;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
-    text-align: center;
-    line-height: 50px;
+    margin: 10px;
+    padding: 10px 20px;
     font-size: 16px;
-    font-weight: bold;
-    font-family: 'Comic Sans MS', sans-serif;
+    cursor: pointer;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
 }
 
 .nav-buttons button:hover {
-    background: radial-gradient(circle, #ffeb3b, #ffd54f); /* Lighter gradient on hover */
+    background-color: #0056b3;
     transform: scale(1.1);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
 .nav-buttons button:active {
-    background: radial-gradient(circle, #ffc107, #ff9800); /* Darker gradient on click */
-    transform: scale(0.95);
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    background-color: #004085;
+}
+
+.clock {
+    margin-top: 20px;
+    font-family: 'Dot Matrix', 'Courier New', Courier, monospace;
+    font-size: 48px;
+    color: #00ff00;
+    text-align: center;
 }
