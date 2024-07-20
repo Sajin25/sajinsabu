@@ -65,6 +65,24 @@ h1 {
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
+.top-buttons button.home-button {
+    font-weight: bold;
+    background-color: ivory;
+    color: #333;
+    transition: all 0.5s ease; /* Longer transition for the home button */
+}
+
+.top-buttons button.home-button:hover {
+    background-color: lightgoldenrodyellow;
+    transform: rotate(5deg) scale(1.1); /* Rotate and scale on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.top-buttons button.home-button:active {
+    transform: rotate(0deg) scale(1); /* Reset on click */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
 .certificates {
     text-align: center;
 }
