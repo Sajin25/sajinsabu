@@ -71,7 +71,7 @@ h3 {
 
 .description {
     font-family: 'Times New Roman', serif;
-    color: white;
+    color: white; /* Ensures text color is white */
     text-align: left; /* Aligns text to the left */
     max-width: 50%; /* Restricts width to 50% of the page */
     margin: 20px 0; /* Adds vertical spacing */
