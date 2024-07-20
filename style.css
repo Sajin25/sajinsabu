@@ -66,13 +66,12 @@ h2 {
 h3 {
     font-family: 'Pacifico', cursive;
     color: yellow;
+    margin-top: 20px; /* Adds space between h2 and h3 */
 }
 
 .description {
     font-family: 'Times New Roman', serif;
     color: white;
-    margin-top: 10px;
-    max-width: 50%; /* Restricts width to 50% of the page */
     text-align: left; /* Aligns text to the left */
     padding: 0 20px; /* Optional: adds horizontal padding */
 }
