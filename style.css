@@ -81,7 +81,7 @@ h3 {
 .nav-buttons {
     position: fixed;
     top: 50%;
-    right: 20px;
+    right: 40px; /* Move buttons slightly left */
     transform: translateY(-50%);
     display: flex;
     flex-direction: column;
