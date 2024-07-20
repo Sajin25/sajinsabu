@@ -110,8 +110,8 @@ h1 {
 
 /* Back button styling */
 .back-button {
-    padding: 8px 12px; /* Matching the Skills page button size */
-    font-size: 14px; /* Matching the Skills page button font size */
+    padding: 6px 10px; /* Decreased size */
+    font-size: 12px; /* Smaller font size */
     background: radial-gradient(circle, #ff7f50, #ff4500); /* Gradient color */
     color: white;
     border-radius: 10px;
@@ -128,4 +128,12 @@ h1 {
 
 .back-button:active {
     background: radial-gradient(circle, #ff4500, #ff6347);
+}
+
+.back-button-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    gap: 10px; /* Adjust spacing as needed */
 }
