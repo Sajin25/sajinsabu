@@ -18,7 +18,7 @@ body, html {
 
 .container {
     position: relative;
-    width: 80%;
+    width: 70%; /* Reduced width to add margin on the right */
     min-height: 100vh; /* Ensures the container takes at least the full viewport height */
     padding: 20px;
     box-sizing: border-box;
