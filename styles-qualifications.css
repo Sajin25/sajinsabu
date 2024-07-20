@@ -54,14 +54,14 @@ body, html {
 }
 
 h1 {
-    color: white; /* Changed color to white */
-    font-family: 'Pacifico', cursive; /* Changed font to cursive */
+    color: yellow; /* Changed color to yellow */
+    font-family: 'Pacifico', cursive; /* Cursive font */
     text-align: center;
 }
 
 .qualifications {
     text-align: center;
-    font-family: 'Pacifico', cursive; /* Changed font to cursive */
+    font-family: 'Pacifico', cursive; /* Cursive font */
     color: white; /* Changed font color to white */
     margin-top: 20px;
 }
@@ -71,12 +71,12 @@ h1 {
 }
 
 .qualification h2 {
-    color: white; /* Changed color to white */
-    font-family: 'Pacifico', cursive; /* Changed font to cursive */
+    color: orange; /* Changed color to orange */
+    font-family: 'Pacifico', cursive; /* Cursive font */
 }
 
 .qualification p {
-    font-family: 'Pacifico', cursive; /* Changed font to cursive */
+    font-family: 'Pacifico', cursive; /* Cursive font */
     color: white; /* Changed color to white */
 }
 
