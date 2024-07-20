@@ -1,122 +1,31 @@
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap'); /* Cursive font for h1 */
-@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap'); /* Handwriting font */
-@import url('https://fonts.googleapis.com/css2?family=Times+New+Roman&display=swap'); /* Times New Roman */
-@import url('https://fonts.googleapis.com/css2?family=Comic+Sans+MS&display=swap'); /* Cartoon font */
-@import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap'); /* Fancy font for clock */
-@import url('https://fonts.googleapis.com/css2?family=Freckle+Face&display=swap'); /* Cartoon font for buttons */
-
-body, html {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto; /* Enable scrolling if content overflows */
-    font-family: Arial, sans-serif;
-    background: url('new.gif') no-repeat center center fixed;
-    background-size: cover;
-}
-
-.container {
-    position: relative;
-    width: 70%; /* Reduced width to add margin on the right */
-    min-height: 100vh; /* Ensures the container takes at least the full viewport height */
-    padding: 20px;
-    box-sizing: border-box;
-    margin: 20px auto;
-    background: rgba(0, 0, 0, 0.3);
-    border: 5px solid transparent;
-    background: url('leaves.png') border-box;
-    background-size: 100% 100%;
-}
-
-.header {
-    text-align: left;
-    padding-left: 20px;
-}
-
-h1 {
-    color: yellow;
-    font-family: 'Pacifico', cursive;
-}
-
-h1.handwriting {
-    font-family: 'Patrick Hand', cursive;
-}
-
-h2 {
-    color: white;
-    font-family: 'Patrick Hand', cursive;
-}
-
-.profile {
-    margin-top: 20px;
-    text-align: left;
-    padding-left: 20px;
-}
-
-.profile-photo {
-    border-radius: 10px;
-    width: 200px;
-    height: 200px;
-    border: 10px solid;
-    border-image: linear-gradient(to right, white, #ccc);
-    border-image-slice: 1;
-}
-
-h3 {
-    font-family: 'Pacifico', cursive;
-    color: yellow;
-    margin-top: 20px; /* Adds space between h2 and h3 */
-}
-
-.description {
-    font-family: 'Times New Roman', serif;
-    color: white; /* Ensures text color is white */
-    text-align: left; /* Aligns text to the left */
-    max-width: 50%; /* Restricts width to 50% of the page */
-    margin: 20px 0; /* Adds vertical spacing */
-    padding: 0 20px; /* Adds horizontal padding */
-}
-
-.nav-buttons {
-    position: fixed;
-    top: 50%;
-    right: 40px; /* Move buttons slightly left */
-    transform: translateY(-50%);
-    display: flex;
-    flex-direction: column;
-    gap: 15px; /* Adjust this value to increase or decrease spacing between buttons */
-}
-
-.nav-buttons button {
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    border: none;
-    background: radial-gradient(circle, #ff7f50, #ff4500);
-    color: white;
-    border-radius: 10px;
-    font-family: 'Freckle Face', cursive;
-    transition: background-color 0.3s, transform 0.3s;
-}
-
-.nav-buttons button:hover {
-    background: radial-gradient(circle, #ff6347, #ff0000);
-    transform: scale(1.1);
-}
-
-.nav-buttons button:active {
-    background: radial-gradient(circle, #ff4500, #ff6347);
-}
-
-.clock {
-    margin-top: 20px;
-    font-family: 'DotGothic16', sans-serif;
-    font-size: 64px;
-    color: #00ff00;
-    text-align: center;
-    font-weight: bold;
-    position: absolute;
-    bottom: 20px;
-    width: 100%;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sajin Sabu's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Hi,</h1>
+            <h1>I'm Sajin Sabu...</h1>
+            <h2>Studying at College of Engineering Pathanapuram</h2>
+        </div>
+        <div class="profile">
+            <img src="WhatsApp Image 2023-09-24 at 14.45.42_3729cdd2.jpg" alt="Sajin Sabu's Photo" class="profile-photo">
+        </div>
+        <h3>About Me</h3>
+        <div class="nav-buttons">
+            <button onclick="navigate('skills.html')">Skills</button>
+            <button onclick="navigate('qualifications.html')">Qualifications</button>
+            <button onclick="navigate('current_position.html')">Current Position</button>
+            <button onclick="navigate('contact.html')">Contact</button>
+        </div>
+        <div class="clock" id="clock"></div>
+    </div>
+    <script src="script.js"></script>
+    <script src="clock.js"></script>
+</body>
+</html>
