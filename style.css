@@ -89,17 +89,17 @@ h3 {
 }
 
 .nav-buttons button {
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    border: none;
-    background: radial-gradient(circle, #ff7f50, #ff4500);
-    color: white;
-    border-radius: 10px;
-    font-family: 'Freckle Face', cursive;
-    transition: background-color 0.3s, transform 0.3s;
+   width: 100%;
+    height: 100%;
+    color: #fff;
+    border-radius: 30px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-decoration: none;
+    transition: 0.5s;
+    overflow: hidden;
+    backdrop-filter: blur(15px);
 }
-
 .nav-buttons button:hover {
     background: radial-gradient(circle, #ff6347, #ff0000);
     transform: scale(1.1);
